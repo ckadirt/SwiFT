@@ -51,7 +51,7 @@ dev = [
 ]
 
 [project.scripts]
-swift-train = "src/swiftfmri.cli:cli_main"
+swift-train = "swiftfmri.main:cli_main"
 
 [build-system]
 requires = ["hatchling"]

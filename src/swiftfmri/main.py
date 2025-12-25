@@ -57,7 +57,7 @@ def cli_main():
 
     if temp_args.resume_ckpt_path is not None:
         # resume previous experiment
-        from module.utils.neptune_utils import get_prev_args
+        from swiftfmri.utils.neptune_utils import get_prev_args
         args = get_prev_args(args.resume_ckpt_path, args)
         exp_id = args.id
         # override max_epochs if you hope to prolong the training
